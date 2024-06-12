@@ -1,0 +1,32 @@
+.homepageTeaser {
+    display: flex;
+    padding: 40px 0;
+    gap: 32px;
+    &Photo {
+        width: 50%;
+        position: relative;
+        &Image {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+            object-position: 0 75%;
+            border-radius: 12px;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                filter: blur(10px);
+            }
+        }
+        &Text {
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            visibility: hidden;
+            transition: all .4s ease-in-out;
+        }
+    }
+}
