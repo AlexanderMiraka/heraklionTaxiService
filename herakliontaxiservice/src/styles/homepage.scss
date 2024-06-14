@@ -3,7 +3,7 @@
   padding: 40px 0;
   gap: 32px;
   &Photo {
-    width: 50%;
+    width: 100%;
     position: relative;
     &Image {
       width: 100%;
@@ -34,6 +34,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
     h3 {
       font-weight: 400;
       font-size: 18px;
@@ -47,6 +48,10 @@
       background-color: #ffdd00;
       width: fit-content;
       margin: 0 auto;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: rgba(182, 158, 2, 0.722);
+    }
     }
   }
 }
@@ -64,4 +69,25 @@
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 500;
   }
+}
+.faq-slider {
+  display: flex;
+  padding: 40px 0;
+  gap: 32px;
+  & > * {
+    width: 100%;
+  }
+}
+.accordion {
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  h3 {
+    font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+}
 }
