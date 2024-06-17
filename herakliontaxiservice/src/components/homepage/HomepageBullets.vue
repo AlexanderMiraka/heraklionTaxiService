@@ -1,6 +1,6 @@
 <template>
   <swiper
-    :grabCursor="true"
+    :grabCursor="false"
     :loop="true"
     :direction="'vertical'"
     :autoplay="{
@@ -8,6 +8,7 @@
       disableOnInteraction: false,
     }"
     :modules="modules"
+    :allowTouchMove="false"
   >
     <swiper-slide class="bulletPanel">
       <h3>Professional Service</h3>

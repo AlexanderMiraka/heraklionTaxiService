@@ -18,7 +18,7 @@
 
       <div class="accordion__content"
         v-show="visible">
-        <ul>
+        <ul class="accordion-content">
           <!-- This slot will handle all the content that is passed to the accordion -->
           <slot name="accordion-content"></slot>
         </ul>
@@ -66,17 +66,34 @@ export default {
 <style lang="scss" scoped>
 .accordion__item {
   cursor: pointer;
-  border-bottom: 1px solid #ebebeb;
+  border: 2px solid #000;
   position: relative;
-  margin: 32px 0;
+  margin: 16px 0;
   padding-bottom: 8px;
 }
 
 .accordion__trigger {
   display: flex;
   justify-content: space-between;
+  padding-top: 8px;
+  &::after {
+    background: url('../../assets/arrow-down.svg') center no-repeat;
+    height: 16px;
+    width: 16px;
+    background-size: contain;
+    padding-right: 16px;
+    content: "";
+    transition: 0.3s all ease-in-out;
+  }
 }
-
+.accordion__trigger_active {
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  background: #eee;
+  &::after {
+    transform: rotate(180deg);
+  }
+}
 .accordion-enter-active,
 .accordion-leave-active {
   will-change: height, opacity;

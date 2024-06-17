@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <div>
+  <div class="faq">
     <accordion class="accordion">
       <accordion-item>
         <!-- This slot will handle the title/header of the accordion and is the part you click on -->
