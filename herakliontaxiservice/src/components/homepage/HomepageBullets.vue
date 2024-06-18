@@ -9,6 +9,7 @@
     }"
     :modules="modules"
     :allowTouchMove="false"
+    class="swiperBullets"
   >
     <swiper-slide class="bulletPanel">
       <h3>Professional Service</h3>
