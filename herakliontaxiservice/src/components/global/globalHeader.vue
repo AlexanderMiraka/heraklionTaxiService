@@ -2,9 +2,9 @@
   <div class="headerContainer">
     <h1 class="headerContainerTitle">Heraklion Taxi Service</h1>
     <div class="headerContainerButtons">
-      <button class="button-primary">Home</button>
-      <button class="button-primary">Rates</button>
-      <button class="button-primary">Contact</button>
+      <router-link class="button-primary" to="/">Home</router-link>
+      <router-link class="button-primary" to="/rates">Rates</router-link>
+      <router-link class="button-primary" to="/contact">Contact</router-link>
     </div>
   </div>
 </template>
