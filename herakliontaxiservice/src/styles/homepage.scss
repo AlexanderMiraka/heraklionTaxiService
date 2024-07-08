@@ -1,70 +1,69 @@
 .homepageTeaser {
   display: flex;
-  padding: 40px 0;
+  position: relative;
+  height: 100vh;
   &Photo {
     width: 100%;
-    position: relative;
+    height: calc(100vh - 60px);
     &Image {
       width: 100%;
       object-fit: cover;
-      aspect-ratio: 4/3;
-      object-position: 0 75%;
-      border-top-left-radius: 12px;
-      border-bottom-left-radius: 12px;
-      transition: all 0.4s ease-in-out;
-      height: 100%;
-      &:hover {
-        filter: blur(10px);
-      }
-    }
-    &Text {
-      position: absolute;
-      color: #fff;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-weight: 500;
-      visibility: hidden;
-      transition: all 0.4s ease-in-out;
+      object-position: 0 56%;
+      margin-top: 60px;
     }
   }
   &Text {
-    background-color: #fff;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    h3 {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
+    h2 {
+      color: #ffc000;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 26px;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
     }
     .button-primary {
-      background-color: #ffdd00;
-      width: fit-content;
-      margin: 0 auto;
+      background-color: transparent;
       transition: all 0.5s ease-in-out;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 4px 12px;
+      text-decoration: none;
+      height: fit-content;
+      font-family: Raleway, Helvetica, sans-serif;
+      border: none;
+      width: fit-content;
+      color: #fff;
       &:hover {
-        background-color: rgba(182, 158, 2, 0.722);
-    }
+        background-color: #fff;
+        color: #ffc000;
+        border-radius: 20px;
+      }
     }
   }
 }
 .card {
   .swiperBullets {
     height: 300px;
+    background: #222;
+    margin-top: 32px;
+    border: 2px solid #eee;
+    border-radius: 10px;
   }
   .bulletPanel {
-    color: #fff;
+    color: #ffc000;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,40 +88,41 @@
   margin-top: 32px;
   padding: 0 32px;
   background-color: #eee;
-  opacity: .8;
+  opacity: 0.8;
   border: 2px solid #eee;
 }
 .accordion {
   height: 300px;
   h3 {
     font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      margin: 0;
-      padding: 0 0 0 16px;
-}
-&__item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  &:first-of-type {
-    margin: 0 0 16px 0;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 16px;
   }
-}
-&-content {
-  padding: 0;
-  margin: 0 16px;
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &:first-of-type {
+      margin: 0 0 16px 0;
+    }
+  }
+  &-content {
+    padding: 0;
+    margin: 0 16px;
+  }
 }
 .famousDestinations {
   padding: 32px 0;
-  h2,h5 {
+  h2,
+  h5 {
     font-family: Raleway, Helvetica, sans-serif;
     text-align: center;
     padding: 0;
     margin: 0;
-    color: #fff;
+    color: #ffc000;
   }
   h2 {
     font-size: 32px;
@@ -131,6 +131,7 @@
     margin-bottom: 40px;
     border-bottom: 2px solid #ffdd00;
     padding-bottom: 8px;
+    color: #fff;
   }
   h5 {
     font-size: 14px;

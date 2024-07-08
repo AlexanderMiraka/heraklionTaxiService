@@ -1,7 +1,5 @@
 <template>
-  <basic-card>
-    <hp-teaser></hp-teaser>
-  </basic-card>
+  <hp-teaser></hp-teaser>
   <basic-card class="faq-slider">
     <homepage-bullets></homepage-bullets>
     <homepage-faq></homepage-faq>
