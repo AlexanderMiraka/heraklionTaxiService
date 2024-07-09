@@ -4,7 +4,7 @@
     <homepage-bullets></homepage-bullets>
     <homepage-faq></homepage-faq>
   </basic-card>
-  <basic-card>
+  <basic-card class="homepageCarousel">
     <homepage-carousel></homepage-carousel>
   </basic-card>
 </template>

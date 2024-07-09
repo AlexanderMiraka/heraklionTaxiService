@@ -1,63 +1,89 @@
 .rates {
-    height: 50vh;
+  height: 50vh;
+  overflow-y: auto;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  margin-top: 120px;
+  position: relative;
+  &Container {
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 500px;
     overflow-y: auto;
-    font-family: Helvetica;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-    scrollbar-width: none;
-    h2 {
-        margin: 24px 0 0;
-        padding: 0;
-        text-align: center;
-        color: #fff;
-    }
-    &Container {
-        box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-        width: 100%;
-        height: 500px;
-        overflow-y: auto;
-        margin: 24px 0;
-        background-color: #d2d2d2;
-        border-collapse: collapse;
-    }
-    &Header {
-        background-color: #FFED86;
-        position: sticky; 
+    margin: 24px 0;
+    background-color: #d2d2d2;
+    border-collapse: collapse;
+  }
+  &Header {
+    background-color: #ffed86;
+    position: sticky;
     top: 0;
-    }
-    &Destinations {
-        border: 1px solid #e9e9e9;
-    }
+  }
+  &Destinations {
+    border-bottom: 1px solid #e9e9e9;
+  }
 }
 th {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 td {
-    font-size: 14px;
-    line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
 }
 .extraRates {
-    background-color: #eee;
-    margin: 0 40px;
-    font-family: Helvetica;
-    -webkit-font-smoothing: antialiased;
+  margin: 0 40px;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 32px;
+  padding: 32px 0px;
+  margin: 0 72px;
+  .tourRate,
+  .waitingRate,
+  .anythingElse,
+  .specialPrices {
+    color: #fff;
+    border-radius: 12px;
+    flex: 1;
+    background-color: #222;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 32px;
-    padding: 32px 40px;
+    justify-content: center;
     h2 {
-        text-align: center;
-        margin: 0;
-        padding: 0;
+      text-align: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #fff;
+      font-size: 21px;
+      line-height: 25px;
+      width: 100%;
+      margin: 16px 0;
     }
-    .tourRate,.waitingRate {
-        background-color: #FFED86;
-        border-radius: 12px;
+    h5,
+    a {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      width: fit-content;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      align-self: center;
+      color: #ffc000;
     }
+    h4 {
+      padding: 0 16px;
+    }
+  }
+}
+.ratesDisclaimer {
+  padding: 0;
+  text-align: center;
+  color: #fff;
 }

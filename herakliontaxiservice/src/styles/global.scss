@@ -3,8 +3,11 @@
     margin: 0;
 }
 body {
-    background: url(../assets/taxiPhotobg.jpg) center / cover no-repeat;
+    background: #4a4a4a;
 }
 .homepageTeaser {
-    background: url(../assets/taxi-photo.png) center /cover no-repeat;
+    background: url(../assets/taxiPhotobg.jpg) 0% 70% / cover no-repeat;
+}
+.homepageCarousel {
+    background: url(../assets/taxiPhotobg.jpg) center / cover no-repeat;
 }

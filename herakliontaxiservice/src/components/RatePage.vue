@@ -1,6 +1,6 @@
 <template>
   <basic-card class="rates">
-    <h2>All distances are calculated from airport and port of Herakleion</h2>
+    <h2 class="ratesDisclaimer">All distances are calculated from airport and port of Herakleion</h2>
     <table class="ratesContainer">
       <tr class="ratesHeader">
         <th>Destination</th>
@@ -16,9 +16,9 @@
       >
         <td>{{ destination.destination }}</td>
         <td>{{ destination.perfecture }}</td>
-        <td>{{ destination.distance }}</td>
-        <td>{{ destination.approximateTime }}</td>
-        <td>{{ destination.price }}</td>
+        <td>{{ destination.distance }} km</td>
+        <td>{{ destination.approximateTime }} minutes</td>
+        <td>{{ destination.price }} &euro;</td>
       </tr>
     </table>
   </basic-card>

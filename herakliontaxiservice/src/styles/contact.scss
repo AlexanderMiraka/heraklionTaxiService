@@ -1,0 +1,101 @@
+.taxiPhoto {
+  width: 100%;
+  position: relative;
+  &Img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 0 75%;
+  }
+  &Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+  }
+}
+.contactDetails {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0 40px;
+  gap: 16px;
+  margin-top: 80px;
+  .address {    
+    &Icon {
+      background: url("../assets/svgs/map-location-pin-svgrepo-com.svg") center
+        no-repeat;
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #ffdd00;
+      border-radius: 100%;
+      background-size: 80%;
+      margin-top: 8px;
+    }
+  }
+  .phone {
+    &Icon {
+        background: url("../assets/svgs/mobile-phone-svgrepo-com.svg") center
+        no-repeat;
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #ffdd00;
+      border-radius: 100%;
+      background-size: 80%;
+      margin-top: 8px;
+    }
+  }
+  .mail {
+    &Icon {
+        background: url("../assets/svgs/mail-open-svgrepo-com.svg") center
+        no-repeat;
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #ffdd00;
+      border-radius: 100%;
+      background-size: 80%;
+      margin-top: 8px;
+    }
+  }
+  .facebook {
+    &Icon {
+        background: url("../assets/svgs/facebook-boxed-svgrepo-com.svg") center
+        no-repeat;
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #ffdd00;
+      border-radius: 100%;
+      background-size: 80%;
+      margin-top: 8px;
+    }
+  }
+  .address,.phone,.mail,.facebook {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 32px;
+    border-radius: 6px;
+    flex: 1;
+  }
+  h3 {
+    color: #ffdd00;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0 40px 32px;
+  }
+}
